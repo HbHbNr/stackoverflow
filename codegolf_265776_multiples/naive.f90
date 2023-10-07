@@ -3,7 +3,7 @@ real::r(999)=1
 n=2
 i=100
 do j=1,999
-if(r(j)==1)then
+if(r(j)/=0)then
 print*,j
 r(j*n)=0
 i=i-1
