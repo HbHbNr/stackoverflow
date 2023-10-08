@@ -1,13 +1,15 @@
 !header
 program x
-integer::i(2)=[1,0]
 character(len=99)::s
+i=1
+j=0
 
 !repeated code
-l=i(1)
+l=i
 write(s,*)'(',l,'A)'
 if(l>0)write(*,s,advance='no')('x',k=1,l)
-i=[i(2),sum(i)]
+i=j
+j=j+l
 
 !footer
 end
