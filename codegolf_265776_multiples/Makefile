@@ -1,5 +1,5 @@
-all: naive
-	echo $$(./naive) | tr ' ' ','
+all: code
+	echo $$(./code) | tr ' ' ','
 
-naive: naive.f90
-	gfortran -Wall -o naive naive.f90
+code: code.f90
+	gfortran -Wall -o code code.f90
